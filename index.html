@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Auto King — CRO Strategy Report 2026 | Stellar Rank</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#070D1A;--bg2:#0D1525;--bg3:#131E32;--bg4:#1A2640;
+  --gold:#F0A500;--gold2:#FFB733;--red:#FF3B5C;--green:#00D68F;
+  --blue:#00AAFF;--orange:#FF8A00;--purple:#A855F7;--teal:#00E5CC;
+  --text:#E8EDF5;--text2:#8A9BB5;--text3:#4A5D7A;
+  --br:rgba(255,255,255,0.07);--card:rgba(255,255,255,0.04);
+  --max:1300px;--gap:2rem;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:15px;line-height:1.65;overflow-x:hidden;}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(7,13,26,0.96);backdrop-filter:blur(20px);border-bottom:1px solid var(--br);height:54px;display:flex;align-items:center;justify-content:space-between;padding:0 2rem;}
+.nb{font-family:'Syne',sans-serif;font-weight:800;font-size:.85rem;letter-spacing:.08em;color:var(--gold);text-transform:uppercase;}
+.nl{display:flex;gap:.1rem;flex-wrap:wrap;}
+.nl a{color:var(--text2);text-decoration:none;font-size:.72rem;font-weight:500;padding:.28rem .6rem;border-radius:5px;transition:all .15s;white-space:nowrap;}
+.nl a:hover{color:var(--text);background:rgba(255,255,255,.06);}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:7rem 2rem 5rem;position:relative;overflow:hidden;}
+.hg{position:absolute;inset:0;opacity:.03;background-image:linear-gradient(rgba(240,165,0,.6) 1px,transparent 1px),linear-gradient(90deg,rgba(240,165,0,.6) 1px,transparent 1px);background-size:50px 50px;}
+.hglow{position:absolute;top:-15%;right:-8%;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(240,165,0,.07) 0%,transparent 65%);}
+.hglow2{position:absolute;bottom:-20%;left:-8%;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(0,213,255,.05) 0%,transparent 65%);}
+.hi{max-width:var(--max);margin:0 auto;width:100%;position:relative;}
+.hbadge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(240,165,0,.1);border:1px solid rgba(240,165,0,.3);color:var(--gold);font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:.38rem 1rem;border-radius:50px;margin-bottom:1.6rem;}
+.hbadge::before{content:'';width:6px;height:6px;background:var(--gold);border-radius:50%;animation:blink 2s infinite;}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.htitle{font-family:'Syne',sans-serif;font-size:clamp(2.8rem,7vw,5.5rem);font-weight:800;line-height:1.0;letter-spacing:-.03em;margin-bottom:1.4rem;}
+.htitle .g{color:var(--gold);}
+.htitle .d{color:var(--text2);}
+.hmeta{display:flex;gap:1.8rem;align-items:center;color:var(--text2);font-size:.875rem;margin-bottom:3rem;flex-wrap:wrap;}
+.hmeta strong{color:var(--text);}
+.hd{width:1px;height:1em;background:var(--text3);}
+
+/* STAT STRIP */
+.stat-strip{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--br);border:1px solid var(--br);border-radius:14px;overflow:hidden;max-width:1100px;}
+.ss{background:var(--bg2);padding:1.2rem 1rem;text-align:center;transition:background .2s;}
+.ss:hover{background:var(--bg3);}
+.ss-val{font-family:'Syne',sans-serif;font-size:1.6rem;font-weight:800;letter-spacing:-.02em;margin-bottom:.15rem;}
+.ss-lbl{font-size:.66rem;color:var(--text2);text-transform:uppercase;letter-spacing:.1em;font-weight:500;}
+
+/* SECTIONS */
+section{padding:5rem 2rem;}
+.si{max-width:var(--max);margin:0 auto;}
+.stag{font-family:'JetBrains Mono',monospace;font-size:.68rem;color:var(--gold);letter-spacing:.15em;text-transform:uppercase;margin-bottom:.6rem;display:block;}
+h2.st{font-family:'Syne',sans-serif;font-size:clamp(1.6rem,4vw,2.6rem);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:.8rem;}
+.sd{color:var(--text2);font-size:.975rem;max-width:700px;line-height:1.7;margin-bottom:2.5rem;}
+.bg2{background:var(--bg2);}
+.divider{height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);}
+
+/* GRID */
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;}
+.g32{display:grid;grid-template-columns:3fr 2fr;gap:1.4rem;}
+
+/* CARD */
+.card{background:var(--card);border:1px solid var(--br);border-radius:13px;padding:1.5rem;transition:border-color .2s;}
+.card:hover{border-color:rgba(240,165,0,.2);}
+.ct{font-family:'Syne',sans-serif;font-size:.9rem;font-weight:700;margin-bottom:.45rem;}
+.cb{color:var(--text2);font-size:.86rem;line-height:1.65;}
+
+/* ALERTS */
+.al{border-radius:11px;padding:1.1rem 1.35rem;display:flex;gap:.85rem;align-items:flex-start;margin-bottom:1rem;}
+.ali{font-size:1.1rem;flex-shrink:0;margin-top:.1rem;}
+.alt{font-weight:600;font-size:.86rem;margin-bottom:.2rem;}
+.alb{font-size:.83rem;line-height:1.6;color:var(--text2);}
+.crit{background:rgba(255,59,92,.09);border:1px solid rgba(255,59,92,.28);} .crit .alt{color:var(--red);}
+.warn{background:rgba(255,138,0,.09);border:1px solid rgba(255,138,0,.28);} .warn .alt{color:var(--orange);}
+.good{background:rgba(0,214,143,.07);border:1px solid rgba(0,214,143,.22);} .good .alt{color:var(--green);}
+.info{background:rgba(0,170,255,.07);border:1px solid rgba(0,170,255,.2);} .info .alt{color:var(--blue);}
+.purple-al{background:rgba(168,85,247,.07);border:1px solid rgba(168,85,247,.2);} .purple-al .alt{color:var(--purple);}
+
+/* TABLES */
+.tw{overflow-x:auto;border-radius:11px;border:1px solid var(--br);margin-bottom:1.5rem;}
+table{width:100%;border-collapse:collapse;font-size:.82rem;}
+thead th{background:var(--bg3);color:var(--text2);font-weight:600;font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;padding:.75rem .9rem;text-align:left;white-space:nowrap;border-bottom:1px solid var(--br);}
+tbody tr{border-bottom:1px solid rgba(255,255,255,.04);transition:background .12s;}
+tbody tr:hover{background:rgba(255,255,255,.025);}
+tbody tr:last-child{border-bottom:none;}
+td{padding:.7rem .9rem;color:var(--text);vertical-align:middle;}
+.mono{font-family:'JetBrains Mono',monospace;font-size:.78rem;}
+.tag{display:inline-block;padding:.16rem .58rem;border-radius:50px;font-size:.68rem;font-weight:600;}
+.tg{background:rgba(0,214,143,.14);color:var(--green);}
+.tr{background:rgba(255,59,92,.14);color:var(--red);}
+.to{background:rgba(255,138,0,.14);color:var(--orange);}
+.tb{background:rgba(0,170,255,.09);color:var(--blue);}
+.ty{background:rgba(240,165,0,.14);color:var(--gold);}
+.tp{background:rgba(168,85,247,.12);color:var(--purple);}
+.tgr{background:rgba(255,255,255,.07);color:var(--text2);}
+
+/* COPY BOX */
+.copybox{background:var(--bg3);border:1px solid var(--br);border-radius:10px;overflow:hidden;margin-bottom:1rem;}
+.cb-hdr{padding:.6rem 1rem;font-size:.68rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid var(--br);display:flex;justify-content:space-between;align-items:center;}
+.cb-hdr.bad{color:var(--red);background:rgba(255,59,92,.08);}
+.cb-hdr.good2{color:var(--green);background:rgba(0,214,143,.07);}
+.cb-body{padding:.9rem 1rem;font-family:'JetBrains Mono',monospace;font-size:.8rem;color:var(--text);line-height:1.7;}
+.cb-body span{color:var(--gold);}
+.cb-body .cm{color:var(--text2);}
+.cb-body .hl{color:var(--blue);}
+.cb-body .ok{color:var(--green);}
+.cb-body .bad2{color:var(--red);text-decoration:line-through;}
+.cb-body .fix{color:var(--green);}
+
+/* NEG KW */
+.kw-grid{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.8rem;}
+.kw{font-size:.74rem;padding:.22rem .65rem;border-radius:50px;font-family:'JetBrains Mono',monospace;}
+.kw-red{background:rgba(255,59,92,.12);border:1px solid rgba(255,59,92,.3);color:var(--red);}
+.kw-org{background:rgba(255,138,0,.1);border:1px solid rgba(255,138,0,.25);color:var(--orange);}
+.kw-blu{background:rgba(0,170,255,.09);border:1px solid rgba(0,170,255,.2);color:var(--blue);}
+
+/* FUNNEL */
+.funnel{display:flex;flex-direction:column;gap:0;}
+.fn{display:flex;align-items:stretch;gap:0;}
+.fn-label{width:180px;flex-shrink:0;padding:1rem 1.2rem;display:flex;align-items:center;justify-content:flex-end;font-size:.78rem;font-weight:600;color:var(--text2);text-align:right;}
+.fn-bar-wrap{flex:1;padding:.6rem 0;display:flex;align-items:center;}
+.fn-bar{border-radius:0 6px 6px 0;display:flex;align-items:center;padding:.7rem 1rem;font-size:.8rem;font-weight:600;min-height:44px;position:relative;}
+.fn-val{font-family:'JetBrains Mono',monospace;font-size:.82rem;margin-left:auto;padding-left:1rem;color:rgba(255,255,255,.6);}
+.fn-issue{padding:.5rem 1.2rem .5rem 180px;font-size:.79rem;color:var(--red);background:rgba(255,59,92,.05);border-left:3px solid var(--red);margin-bottom:2px;}
+
+/* ASSET STRENGTH */
+.strength-meter{display:flex;gap:4px;margin:.5rem 0;}
+.sm-seg{flex:1;height:8px;border-radius:2px;background:rgba(255,255,255,.08);}
+.sm-seg.active-poor{background:var(--red);}
+.sm-seg.active-avg{background:var(--orange);}
+.sm-seg.active-good{background:var(--gold);}
+.sm-seg.active-exc{background:var(--green);}
+
+/* PRIORITY MATRIX */
+.pmatrix{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--br);border:1px solid var(--br);border-radius:12px;overflow:hidden;}
+.pm-cell{background:var(--bg2);padding:1.4rem;}
+.pm-hdr{font-family:'Syne',sans-serif;font-weight:700;font-size:.85rem;margin-bottom:1rem;padding-bottom:.5rem;border-bottom:1px solid var(--br);}
+.pm-item{display:flex;gap:.65rem;padding:.4rem 0;border-bottom:1px solid rgba(255,255,255,.03);font-size:.82rem;}
+.pm-item:last-child{border-bottom:none;}
+.pm-num{width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.66rem;font-weight:800;flex-shrink:0;margin-top:.1rem;}
+.pm-text{color:var(--text2);}
+
+/* LP wireframe */
+.lp{border:1px solid var(--br);border-radius:12px;overflow:hidden;font-size:.78rem;max-width:320px;}
+.lp-head{background:var(--bg3);padding:1.3rem;text-align:center;border-bottom:1px solid var(--br);}
+.lp-ht{font-family:'Syne',sans-serif;font-weight:800;font-size:1rem;margin-bottom:.3rem;}
+.lp-hs{color:var(--text2);font-size:.74rem;}
+.lp-trust{display:flex;gap:.4rem;justify-content:center;padding:.65rem;border-bottom:1px solid var(--br);flex-wrap:wrap;}
+.lp-b{background:rgba(0,214,143,.1);border:1px solid rgba(0,214,143,.2);color:var(--green);padding:.2rem .5rem;border-radius:50px;font-size:.64rem;font-weight:600;}
+.lp-form{padding:1rem;border-bottom:1px solid var(--br);}
+.lp-f{height:30px;background:rgba(255,255,255,.05);border:1px solid var(--br);border-radius:5px;margin-bottom:.45rem;display:flex;align-items:center;padding:0 .7rem;color:var(--text3);font-size:.72rem;}
+.lp-price{background:rgba(240,165,0,.1);border:1px solid rgba(240,165,0,.2);color:var(--gold);padding:.5rem;text-align:center;font-weight:700;font-size:.8rem;border-radius:5px;margin-bottom:.5rem;}
+.lp-cta{background:var(--gold);color:#0A0F1E;padding:.7rem;text-align:center;font-weight:800;font-size:.85rem;border-radius:5px;cursor:pointer;}
+.lp-phone{padding:.7rem;text-align:center;border-bottom:1px solid var(--br);}
+.lp-pb{background:rgba(0,170,255,.1);border:1px solid rgba(0,170,255,.2);color:var(--blue);padding:.5rem 1rem;border-radius:50px;font-size:.76rem;font-weight:600;display:inline-block;}
+.lp-rev{padding:.7rem 1rem;}
+.lp-star{color:var(--gold);font-size:.82rem;}
+.lp-rt{font-size:.68rem;color:var(--text2);margin-top:.15rem;}
+
+/* SCROLL */
+::-webkit-scrollbar{width:5px;height:5px;}
+::-webkit-scrollbar-track{background:var(--bg2);}
+::-webkit-scrollbar-thumb{background:var(--text3);border-radius:3px;}
+
+/* BAR CHART INLINE */
+.bc{padding:1.2rem;background:var(--card);border:1px solid var(--br);border-radius:12px;margin-bottom:1.5rem;}
+.bc-title{font-family:'Syne',sans-serif;font-weight:700;font-size:.88rem;margin-bottom:1.1rem;color:var(--text);}
+.bcr{display:flex;align-items:center;gap:.7rem;margin-bottom:.7rem;}
+.bc-lbl{font-size:.75rem;color:var(--text2);width:200px;flex-shrink:0;text-align:right;}
+.bc-track{flex:1;background:rgba(255,255,255,.05);border-radius:50px;height:18px;overflow:hidden;}
+.bc-fill{height:100%;border-radius:50px;display:flex;align-items:center;justify-content:flex-end;padding-right:.5rem;font-size:.69rem;font-weight:600;}
+.bc-val{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--text2);width:80px;flex-shrink:0;}
+
+footer{background:var(--bg2);border-top:1px solid var(--br);padding:2.5rem 2rem;text-align:center;color:var(--text2);font-size:.8rem;}
+footer strong{color:var(--text);}
+
+@media(max-width:768px){
+  .stat-strip,.g2,.g3,.g4,.g32,.pmatrix{grid-template-columns:1fr;}
+  .nl{display:none;}
+  .fn-label{width:100px;font-size:.7rem;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nb">Auto King — CRO Report 2026</div>
+  <div class="nl">
+    <a href="#funnel">Funnel</a>
+    <a href="#waste">Waste Audit</a>
+    <a href="#assets">Asset Groups</a>
+    <a href="#copy">Ad Copy</a>
+    <a href="#negkw">Negative KWs</a>
+    <a href="#landing">Landing Pages</a>
+    <a href="#tracking">Tracking</a>
+    <a href="#nsw">NSW Gap</a>
+    <a href="#matrix">Priority Matrix</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hg"></div><div class="hglow"></div><div class="hglow2"></div>
+  <div class="hi">
+    <div class="hbadge">Live Account Data · Feb–May 2026 · Stellar Rank</div>
+    <h1 class="htitle">Auto King<br><span class="g">CRO Strategy</span><br><span class="d">Full Funnel Audit</span></h1>
+    <div class="hmeta">
+      <span>Account <strong>108-264-3572</strong></span><div class="hd"></div>
+      <span>29,283 Search Terms Analysed</span><div class="hd"></div>
+      <span>33 Asset Groups Audited</span><div class="hd"></div>
+      <span>Prepared by <strong>Stellar Rank</strong></span>
+    </div>
+    <div class="stat-strip">
+      <div class="ss"><div class="ss-val" style="color:var(--red)">24.9%</div><div class="ss-lbl">Spend — Zero Conversions</div></div>
+      <div class="ss"><div class="ss-val" style="color:var(--red)">$24,460</div><div class="ss-lbl">Annualised Wasted Spend</div></div>
+      <div class="ss"><div class="ss-val" style="color:var(--red)">0/33</div><div class="ss-lbl">Asset Groups — Excellent</div></div>
+      <div class="ss"><div class="ss-val" style="color:var(--orange)">Average</div><div class="ss-lbl">All 33 Asset Group Ratings</div></div>
+      <div class="ss"><div class="ss-val" style="color:var(--orange)">14–27%</div><div class="ss-lbl">Impression Share</div></div>
+      <div class="ss"><div class="ss-val" style="color:var(--green)">+6%</div><div class="ss-lbl">Convs if All Reach Excellent</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SECTION 1: FULL FUNNEL CRO VIEW -->
+<section id="funnel" class="bg2">
+<div class="si">
+  <span class="stag">01 / The Full Conversion Funnel</span>
+  <h2 class="st">Where Auto King is losing customers at every stage</h2>
+  <p class="sd">CRO is not a landing page problem. It is a full-funnel problem. Every stage from search query to booked job has a specific conversion failure point. This audit addresses all of them.</p>
+
+  <div class="funnel">
+    <div class="fn">
+      <div class="fn-label">Search Query</div>
+      <div class="fn-bar-wrap">
+        <div class="fn-bar" style="width:100%;background:rgba(0,170,255,.25);color:var(--blue);">
+          100% of available searches in target markets
+          <span class="fn-val">~400,000/mo estimated</span>
+        </div>
+      </div>
+    </div>
+    <div class="fn-issue">ISSUE: 24.9% of spend goes to zero-conversion queries. Roadside assistance brands (NRMA/RACQ/Budget Direct), auto electricians, towing, windscreens — services Auto King does not offer. $6,115 wasted Feb–May 2026 alone.</div>
+
+    <div class="fn">
+      <div class="fn-label">Ad Impression</div>
+      <div class="fn-bar-wrap">
+        <div class="fn-bar" style="width:82%;background:rgba(240,165,0,.2);color:var(--gold);">
+          14–27% impression share — entering 1 in 6 auctions
+          <span class="fn-val">IS severely throttled</span>
+        </div>
+      </div>
+    </div>
+    <div class="fn-issue">ISSUE: Zero rank-lost IS and zero budget-lost IS. The account is NOT losing on quality or budget — Target CPA of $20 is artificially throttling bid aggression. Algorithm underbidding because conversion signal is corrupted.</div>
+
+    <div class="fn">
+      <div class="fn-label">Ad Click (CTR)</div>
+      <div class="fn-bar-wrap">
+        <div class="fn-bar" style="width:70%;background:rgba(168,85,247,.2);color:var(--purple);">
+          PMax mobile 4–8% CTR · Sydney Search 4.9%
+          <span class="fn-val">Moderate — improvable</span>
+        </div>
+      </div>
+    </div>
+    <div class="fn-issue">ISSUE: All 33 asset groups rated "Average". Improving to Excellent delivers 6% more conversions per Google's own data. Descriptions are copy-pasted across all service types — no message differentiation. "Get A Free Quote Today" CTA contradicts fixed pricing model.</div>
+
+    <div class="fn">
+      <div class="fn-label">Landing Page</div>
+      <div class="fn-bar-wrap">
+        <div class="fn-bar" style="width:40%;background:rgba(255,59,92,.25);color:var(--red);">
+          Instapage crashed — broken pages since ~Oct 2025
+          <span class="fn-val">CRITICAL FAILURE</span>
+        </div>
+      </div>
+    </div>
+    <div class="fn-issue">ISSUE: Landing pages are down. GA4 shows near-zero CPC form conversions Sep 2025–Feb 2026 while Google Ads reported thousands. Visitors are clicking ads and hitting broken or generic pages. This single failure is responsible for the entire CPA spike to $25.01.</div>
+
+    <div class="fn">
+      <div class="fn-label">Form Submission</div>
+      <div class="fn-bar-wrap">
+        <div class="fn-bar" style="width:20%;background:rgba(255,59,92,.2);color:var(--red);">
+          Instapage: 11,986 submissions at $0 value, "Needs attention"
+          <span class="fn-val">Tracking broken</span>
+        </div>
+      </div>
+    </div>
+    <div class="fn-issue">ISSUE: Conversion values not assigned by service type. $130 roadworthy and $299 pre-purchase weighted identically. Smart bidding cannot distinguish high-value from low-value lead types.</div>
+
+    <div class="fn">
+      <div class="fn-label">Booked Job</div>
+      <div class="fn-bar-wrap">
+        <div class="fn-bar" style="width:12%;background:rgba(0,214,143,.15);color:var(--green);">
+          No offline conversion data flowing to Google Ads
+          <span class="fn-val">Invisible to algorithm</span>
+        </div>
+      </div>
+    </div>
+    <div class="fn-issue">ISSUE: No CRM-to-Ads offline conversion pipeline. Campaigns that generate enquiries that never book cannot be identified. Monday.com booking data is entirely disconnected from Google Ads performance.</div>
+  </div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SECTION 2: SEARCH TERM WASTE AUDIT -->
+<section id="waste">
+<div class="si">
+  <span class="stag">02 / Search Term Waste Audit</span>
+  <h2 class="st">$24,460/year burned on the wrong customers</h2>
+  <p class="sd">29,283 search term rows analysed from Feb–May 2026. 24.9% of spend produced zero conversions. The account has no campaign-level negative keyword lists across any PMax campaign.</p>
+
+  <div class="g2" style="margin-bottom:2rem;">
+    <div>
+      <div class="bc">
+        <div class="bc-title">Zero-Conversion Spend by Category — Feb–May 2026</div>
+        <div id="waste-bars"></div>
+      </div>
+    </div>
+    <div>
+      <div class="al crit">
+        <div class="ali">🚨</div>
+        <div><div class="alt">Roadside assistance brand queries — $2,800+ wasted</div>
+        <div class="alb">NRMA ($298), RACQ ($180), Budget Direct ($258), Youi ($102) and 50+ variants are consuming budget. People searching these terms need emergency roadside clubs — not a mobile roadworthy inspection. These are false intent signals. Worse: the "conversions" recorded on some of these terms are almost certainly phone calls from confused customers dialling Auto King thinking it is the roadside club. These inflate conversion data and corrupt smart bidding.</div></div>
+      </div>
+      <div class="al crit">
+        <div class="ali">⚡</div>
+        <div><div class="alt">Auto electrician queries — $1,200+ wasted on a service Auto King does not offer</div>
+        <div class="alb">"Mobile auto electrician near me" ($260), "auto electrician gold coast" ($89), "mobile auto electricians" ($48) and 80+ suburb-level auto electrician variants are appearing throughout the account. Auto King does not offer auto electrical services. Every dollar spent here is pure waste.</div></div>
+      </div>
+      <div class="al warn">
+        <div class="ali">🔧</div>
+        <div><div class="alt">Towing, windscreen, panel beating queries — $800+ wasted</div>
+        <div class="alb">"Cheap tows near me" ($26), "O'Brien windscreen" ($41), "panel beater near me" ($13) and variants. None are Auto King services. These terms appear because the Mechanics asset group search themes are broad enough to match general automotive intent without service specificity.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;margin-bottom:1rem;">Top 20 Highest-Spend Zero-Conversion Queries</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Search Query</th><th>Spend</th><th>Clicks</th><th>Conversions</th><th>Category</th><th>Action</th></tr></thead>
+    <tbody>
+      <tr><td>nrma roadside assistance number</td><td class="mono" style="color:var(--red)">$298.06</td><td class="mono">63</td><td class="mono">15*</td><td><span class="tag tr">False signal</span></td><td><span class="tag to">Negative + audit convs</span></td></tr>
+      <tr><td>budget direct roadside assistance</td><td class="mono" style="color:var(--red)">$257.98</td><td class="mono">51</td><td class="mono">21*</td><td><span class="tag tr">False signal</span></td><td><span class="tag to">Negative + audit convs</span></td></tr>
+      <tr><td>mobile auto electrician near me</td><td class="mono" style="color:var(--red)">$260.77</td><td class="mono">89</td><td class="mono">19*</td><td><span class="tag tr">Wrong service</span></td><td><span class="tag tr">Negative immediately</span></td></tr>
+      <tr><td>racq roadside assist</td><td class="mono" style="color:var(--orange)">$179.95</td><td class="mono">44</td><td class="mono">12*</td><td><span class="tag tr">False signal</span></td><td><span class="tag to">Negative + audit convs</span></td></tr>
+      <tr><td>youi roadside assistance</td><td class="mono" style="color:var(--orange)">$101.85</td><td class="mono">32</td><td class="mono">6*</td><td><span class="tag tr">False signal</span></td><td><span class="tag to">Negative + audit convs</span></td></tr>
+      <tr><td>mobile auto electrician gold coast</td><td class="mono">$60.65</td><td class="mono">18</td><td class="mono">3</td><td><span class="tag tr">Wrong service</span></td><td><span class="tag tr">Negative immediately</span></td></tr>
+      <tr><td>lube mobile</td><td class="mono">$22.65</td><td class="mono">8</td><td class="mono">1</td><td><span class="tag tp">Competitor</span></td><td><span class="tag tr">Negative</span></td></tr>
+      <tr><td>nrma roadside service</td><td class="mono">$15.88</td><td class="mono">5</td><td class="mono">0</td><td><span class="tag tr">False signal</span></td><td><span class="tag tr">Negative immediately</span></td></tr>
+      <tr><td>mobile tyre service</td><td class="mono">$18.67</td><td class="mono">11</td><td class="mono">0</td><td><span class="tag to">Wrong service</span></td><td><span class="tag tr">Negative</span></td></tr>
+      <tr><td>cheap car service near me</td><td class="mono">$18.76</td><td class="mono">7</td><td class="mono">0</td><td><span class="tag to">Price signal</span></td><td><span class="tag to">Negative "cheap"</span></td></tr>
+      <tr><td>mobile diesel mechanic near me</td><td class="mono">$20.15</td><td class="mono">12</td><td class="mono">0</td><td><span class="tag to">Specialist service</span></td><td><span class="tag to">Negative if not offered</span></td></tr>
+      <tr><td>windscreens o brien</td><td class="mono">$17.41</td><td class="mono">5</td><td class="mono">2</td><td><span class="tag to">Wrong service</span></td><td><span class="tag tr">Negative</span></td></tr>
+      <tr><td>mobile auto electrician capalaba</td><td class="mono">$17.57</td><td class="mono">8</td><td class="mono">0</td><td><span class="tag tr">Wrong service</span></td><td><span class="tag tr">Negative immediately</span></td></tr>
+      <tr><td>cheap tows near me</td><td class="mono">$26.34</td><td class="mono">2</td><td class="mono">0</td><td><span class="tag tr">Wrong service</span></td><td><span class="tag tr">Negative immediately</span></td></tr>
+      <tr><td>auto king franchise</td><td class="mono">$2.51</td><td class="mono">1</td><td class="mono">0</td><td><span class="tag to">B2B intent</span></td><td><span class="tag to">Negative "franchise"</span></td></tr>
+      <tr><td>racq roadside assistance number qld</td><td class="mono">$14.97</td><td class="mono">1</td><td class="mono">0</td><td><span class="tag tr">False signal</span></td><td><span class="tag tr">Negative immediately</span></td></tr>
+      <tr><td>o brien windscreen</td><td class="mono">$14.09</td><td class="mono">4</td><td class="mono">0</td><td><span class="tag tr">Wrong service</span></td><td><span class="tag tr">Negative</span></td></tr>
+      <tr><td>panel beater near me</td><td class="mono">$13.36</td><td class="mono">4</td><td class="mono">0</td><td><span class="tag tr">Wrong service</span></td><td><span class="tag tr">Negative</span></td></tr>
+      <tr><td>roadworthy certificate qld online</td><td class="mono">$14.73</td><td class="mono">6</td><td class="mono">0</td><td><span class="tag to">Intent mismatch</span></td><td><span class="tag to">Negative "online"</span></td></tr>
+      <tr><td>uber car inspection brisbane</td><td class="mono">$4.29</td><td class="mono">2</td><td class="mono">0</td><td><span class="tag to">Uber Rideshare</span></td><td><span class="tag to">Negative "uber"</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="font-size:.78rem;color:var(--text3);margin-bottom:2rem;">* Conversions marked with asterisk on roadside assistance queries are highly likely false positives — phone calls from customers dialling the wrong number. These are inflating conversion data and corrupting smart bidding signal.</p>
+
+  <div class="al warn">
+    <div class="ali">⚠</div>
+    <div><div class="alt">Brand queries diluted across 12 simultaneous campaigns — internal competition driving up CPCs</div>
+    <div class="alb">"mobile mechanic" ($820) and "mobile mechanic near me" ($567) each appear across all 12 active campaigns simultaneously. "auto king" ($249) and "autoking" ($260) appear across all 12 campaigns. These generic and branded queries should be consolidated — generic terms via properly structured asset groups with negative keyword sculpting, brand terms via a dedicated always-on brand Search campaign. 12 campaigns competing in the same auction for the same query drives up the cost Google charges Auto King to beat itself.</div></div>
+  </div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SECTION 3: ASSET GROUP AUDIT -->
+<section id="assets" class="bg2">
+<div class="si">
+  <span class="stag">03 / PMax Asset Group Audit</span>
+  <h2 class="st">33 asset groups. Zero rated Excellent. All rated Average.</h2>
+  <p class="sd">Google's own data shows improving Ad Strength from Good to Excellent delivers 6% more conversions on average. The account is not at Good. It is at Average — two ratings below Excellent — across every single asset group in every campaign.</p>
+
+  <div class="g2" style="margin-bottom:2rem;">
+    <div class="card">
+      <div class="ct">What "Average" Ad Strength actually means</div>
+      <div class="cb">Average is the third rating from the bottom in a 5-point scale: Incomplete → Poor → Average → Good → Excellent. It means the asset group has the minimum required assets but lacks diversity, variety and quality depth that Google needs to serve ads optimally across all its inventory types.</div>
+      <div style="margin:1rem 0 .3rem;font-size:.75rem;color:var(--text2);">Ad Strength Scale</div>
+      <div class="strength-meter">
+        <div class="sm-seg"></div>
+        <div class="sm-seg"></div>
+        <div class="sm-seg active-avg"></div>
+        <div class="sm-seg"></div>
+        <div class="sm-seg"></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-size:.65rem;color:var(--text3);margin-top:.3rem;">
+        <span>Incomplete</span><span>Poor</span><span style="color:var(--orange);font-weight:600;">Average ← All 33 AGs here</span><span>Good</span><span>Excellent</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="ct">Asset group structure per campaign</div>
+      <div class="cb" style="margin-bottom:.8rem;">Each PMax campaign contains 3 asset groups segmented by service type. The service segmentation is correct — this is the right framework. The problem is the quality of what's inside each group, not the structure itself.</div>
+      <div style="display:flex;flex-direction:column;gap:.4rem;">
+        <div style="background:rgba(0,170,255,.08);border:1px solid rgba(0,170,255,.2);border-radius:7px;padding:.5rem .8rem;font-size:.8rem;color:var(--blue);">Roadworthy Certificate <span style="color:var(--text2);float:right;">Roadworthy themes</span></div>
+        <div style="background:rgba(168,85,247,.08);border:1px solid rgba(168,85,247,.2);border-radius:7px;padding:.5rem .8rem;font-size:.8rem;color:var(--purple);">Mechanics <span style="color:var(--text2);float:right;">Mechanic themes</span></div>
+        <div style="background:rgba(0,214,143,.08);border:1px solid rgba(0,214,143,.2);border-radius:7px;padding:.5rem .8rem;font-size:.8rem;color:var(--green);">Pre-Purchase Inspections <span style="color:var(--text2);float:right;">PPI themes</span></div>
+        <div style="background:rgba(255,59,92,.08);border:1px solid rgba(255,59,92,.2);border-radius:7px;padding:.5rem .8rem;font-size:.8rem;color:var(--red);">Car Servicing <span style="color:var(--text2);float:right;">❌ Missing asset group</span></div>
+        <div style="background:rgba(255,59,92,.08);border:1px solid rgba(255,59,92,.2);border-radius:7px;padding:.5rem .8rem;font-size:.8rem;color:var(--red);">Diagnosis & Repairs <span style="color:var(--text2);float:right;">❌ Missing asset group</span></div>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;margin-bottom:1rem;">The Root Cause — Identical Descriptions Across Every Asset Group</h3>
+  <div class="al crit" style="margin-bottom:1.5rem;">
+    <div class="ali">🔴</div>
+    <div><div class="alt">All asset groups in all campaigns share the same 5 generic descriptions word-for-word</div>
+    <div class="alb">The Pre-Purchase Inspections asset group shows "We provide mobile pre-purchase car inspection services." as its first description — then uses 4 generic descriptions that are identical to the Roadworthy and Mechanics asset groups. Google reads descriptions to assess relevance. When a Roadworthy asset group shows a pre-purchase inspection description, Google marks ad relevance as low, which lowers Quality Score and increases CPC. This is the primary reason all 33 asset groups are rated Average instead of Good or Excellent.</div></div>
+  </div>
+
+  <div class="g2" style="margin-bottom:2rem;">
+    <div>
+      <h3 style="font-family:'Syne',sans-serif;font-weight:700;font-size:.95rem;margin-bottom:.8rem;">Asset Group Performance — Brisbane North (Feb–May 2026)</h3>
+      <div class="tw">
+      <table>
+        <thead><tr><th>Asset Group</th><th>Impressions</th><th>Conversions</th><th>Conv Rate</th><th>Strength</th></tr></thead>
+        <tbody>
+          <tr><td>Mechanics</td><td class="mono">42,908</td><td class="mono" style="color:var(--green)">253.8</td><td class="mono">0.59%</td><td><span class="tag to">Average</span></td></tr>
+          <tr><td>Roadworthy Certificate</td><td class="mono">27,321</td><td class="mono" style="color:var(--green)">152.8</td><td class="mono">0.56%</td><td><span class="tag to">Average</span></td></tr>
+          <tr><td>Pre-Purchase Inspections</td><td class="mono">12,664</td><td class="mono" style="color:var(--orange)">30.0</td><td class="mono" style="color:var(--red)">0.24%</td><td><span class="tag to">Average</span></td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="al warn">
+        <div><div class="alt">Pre-Purchase conversion rate is less than half of Roadworthy</div>
+        <div class="alb">0.24% vs 0.56%. Pre-Purchase is the highest-value service ($299). Low conversion rate here represents the largest CRO revenue opportunity in the account. Improving the PPI asset group description, headlines, and landing page to be genuinely PPI-specific should be the first creative priority.</div></div>
+      </div>
+    </div>
+    <div>
+      <h3 style="font-family:'Syne',sans-serif;font-weight:700;font-size:.95rem;margin-bottom:.8rem;">Conversion Rate by Asset Group Type — All Campaigns</h3>
+      <div class="tw">
+      <table>
+        <thead><tr><th>Service Asset Group</th><th>Total Impressions</th><th>Total Convs</th><th>Avg Conv Rate</th></tr></thead>
+        <tbody>
+          <tr><td>Roadworthy Certificate</td><td class="mono">130,176</td><td class="mono" style="color:var(--green)">832.2</td><td class="mono" style="color:var(--green)">0.64%</td></tr>
+          <tr><td>Mechanics</td><td class="mono">132,763</td><td class="mono" style="color:var(--green)">1,058.0</td><td class="mono" style="color:var(--green)">0.80%</td></tr>
+          <tr><td>Pre-Purchase Inspections</td><td class="mono">34,006</td><td class="mono" style="color:var(--orange)">153.5</td><td class="mono" style="color:var(--red)">0.45%</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="al info">
+        <div><div class="alt">Mechanics asset group has the highest conversion rate — but targets lowest-value services</div>
+        <div class="alb">The irony: the Mechanics asset group converts at 0.80% — the best in the account — but it captures general mobile mechanic queries where the average service value is $149–$220. Pre-Purchase at $299 converts at 0.45%. The algorithm is doing well at finding mechanic leads, but needs stronger signals to find the highest-value pre-purchase and servicing leads. This is fixed through better descriptions, dedicated landing pages, and assigned conversion values.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;margin-bottom:1rem;">What Each Asset Group Needs to Reach "Excellent"</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Asset Group</th><th>Headlines Needed</th><th>Descriptions Needed</th><th>Images Needed</th><th>Key Missing Element</th></tr></thead>
+    <tbody>
+      <tr><td>Roadworthy Certificate</td><td>15 diverse (have ~15 generic)</td><td>4 service-specific (have 1 + 4 generic)</td><td>Horizontal + Square + Portrait</td><td>Portrait images, service-specific descriptions, price in headline</td></tr>
+      <tr><td>Mechanics</td><td>15 diverse (have ~15 generic)</td><td>4 service-specific (have 0 specific)</td><td>Horizontal + Square + Portrait</td><td>Service-specific descriptions — currently shows PPI description</td></tr>
+      <tr><td>Pre-Purchase Inspections</td><td>15 diverse (have ~15 generic)</td><td>4 service-specific (have 1 specific + 4 generic)</td><td>Horizontal + Square + Portrait</td><td>PPI-specific urgency copy, price callout ($299), buyer-intent headlines</td></tr>
+      <tr><td>Car Servicing (missing)</td><td>15 needed</td><td>4 needed</td><td>Full set needed</td><td>Does not exist — build from scratch</td></tr>
+      <tr><td>Diagnosis & Repairs (missing)</td><td>15 needed</td><td>4 needed</td><td>Full set needed</td><td>Does not exist — build from scratch</td></tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SECTION 4: AD COPY CRO -->
+<section id="copy">
+<div class="si">
+  <span class="stag">04 / Ad Copy CRO</span>
+  <h2 class="st">Specific copy fixes for every asset group</h2>
+  <p class="sd">Ad copy is the first handshake between Auto King and a prospective customer. Currently, every asset group tells the same story regardless of what the customer searched for. Here is exactly what needs to change and what it should say instead.</p>
+
+  <div class="al warn" style="margin-bottom:2rem;">
+    <div class="ali">⚠</div>
+    <div><div class="alt">Three problematic copy elements appearing across all asset groups</div>
+    <div class="alb"><strong style="color:var(--text);">"Get A Free Quote Today"</strong> — Auto King has fixed, transparent pricing ($130 RWC, $149 Pink Slip, $220 Servicing, $299 PPI). A "free quote" CTA creates the impression of variable pricing which is inconsistent with the brand's value proposition and may reduce conversion intent. Replace with "Book Online — Instant Pricing" or "See Upfront Pricing".<br><br>
+    <strong style="color:var(--text);">"We Will Beat Any Price"</strong> — A price-match guarantee claim in an ad creates a price-sensitive customer. Auto King's brand is convenience and quality, not cheapness. This attracts bargain-hunters and repels quality-seekers. It also creates a legal obligation. Remove it.<br><br>
+    <strong style="color:var(--text);">"Qualified Workshop Mechanics"</strong> — Auto King is explicitly a MOBILE service. "Workshop" implies a fixed location. This undermines the core value proposition.</div></div>
+  </div>
+
+  <h3 style="font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;margin:2rem 0 1rem;">Roadworthy Certificate Asset Group — Copy Rewrite</h3>
+  <div class="g2">
+    <div>
+      <div class="copybox">
+        <div class="cb-hdr bad">❌ Current Headlines (all generic, duplicated across campaigns)</div>
+        <div class="cb-body">
+          <span class="bad2">Roadworthy North Brisbane</span> <span class="cm">← location only, no value prop</span><br>
+          <span class="bad2">Need a Roadworthy Certificate?</span> <span class="cm">← question headline, low CTR</span><br>
+          <span class="bad2">Get A Free Quote Today</span> <span class="cm">← wrong CTA for fixed price</span><br>
+          <span class="bad2">We Will Beat Any Price</span> <span class="cm">← dangerous claim, wrong positioning</span><br>
+          <span class="bad2">Qualified Workshop Mechanics</span> <span class="cm">← "workshop" = fixed location = wrong</span><br>
+          <span class="bad2">Loved by Local Car Owners</span> <span class="cm">← vague, no specifics</span><br>
+          <span class="bad2">Upfront Pricing Policy</span> <span class="cm">← weak, buried</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="copybox">
+        <div class="cb-hdr good2">✓ Recommended Headlines — Roadworthy (15 diverse, specific)</div>
+        <div class="cb-body">
+          <span class="ok">Mobile Roadworthy — $130 Flat</span> <span class="cm">← price + mobile = instant value</span><br>
+          <span class="ok">Same-Day Roadworthy Certificate</span> <span class="cm">← urgency trigger</span><br>
+          <span class="ok">We Come to You — Book Now</span> <span class="cm">← convenience + CTA</span><br>
+          <span class="ok">RWC in [City] — QLD Licensed</span> <span class="cm">← trust + geo</span><br>
+          <span class="ok">Roadworthy Done in Your Driveway</span> <span class="cm">← visual, memorable</span><br>
+          <span class="ok">15,000+ Safety Certificates Issued</span> <span class="cm">← social proof + scale</span><br>
+          <span class="ok">Book by 10AM — Cert Today</span> <span class="cm">← specific urgency</span><br>
+          <span class="ok">No Towing Required — We Travel</span> <span class="cm">← objection removal</span><br>
+          <span class="ok">4.9★ Google-Rated Inspectors</span> <span class="cm">← third-party trust</span><br>
+          <span class="ok">10-Minute Callback Guarantee</span> <span class="cm">← speed promise</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="g2" style="margin-top:1.2rem;">
+    <div>
+      <div class="copybox">
+        <div class="cb-hdr bad">❌ Current Descriptions (identical across ALL asset groups)</div>
+        <div class="cb-body">
+          <span class="bad2">Let Auto King take care of all your mobile mechanical and safety certificates needs.</span><br><br>
+          <span class="bad2">We service all makes &amp; models, offering quality repairs at fair prices.</span><br><br>
+          <span class="bad2">Offers mobile safety certificates, vehicle inspections, servicing and repairs.</span><br><br>
+          <span class="cm">↑ Same 3 descriptions used for Roadworthy, Mechanics AND Pre-Purchase</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="copybox">
+        <div class="cb-hdr good2">✓ Recommended Descriptions — Roadworthy Specific</div>
+        <div class="cb-body">
+          <span class="ok">D1: Get your mobile roadworthy certificate for just $130. We come to your home, workplace or carpark — no towing needed. Same-day appointments available across QLD.</span><br><br>
+          <span class="ok">D2: QLD-licensed mobile inspectors issue your safety certificate on the spot. Fully digital — certificate available instantly. Trusted by 15,000+ Queensland drivers.</span><br><br>
+          <span class="ok">D3: Book your $130 roadworthy certificate online in 60 seconds. We cover Brisbane, Gold Coast, Sunshine Coast, Toowoomba, Cairns and Townsville. Call back in 10 minutes.</span><br><br>
+          <span class="ok">D4: Selling your car? Transferring rego? We make your roadworthy simple, fast and affordable at $130. Mobile inspectors come to you — 7 days a week.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;margin:2rem 0 1rem;">Pre-Purchase Inspections Asset Group — Copy Rewrite</h3>
+  <div class="g2">
+    <div>
+      <div class="copybox">
+        <div class="cb-hdr good2">✓ Recommended Headlines — Pre-Purchase (highest value service)</div>
+        <div class="cb-body">
+          <span class="ok">Don't Buy a Lemon — From $299</span> <span class="cm">← fear of loss trigger</span><br>
+          <span class="ok">Pre-Purchase Car Inspection — $299</span> <span class="cm">← direct, price prominent</span><br>
+          <span class="ok">We Inspect Before You Buy</span> <span class="cm">← customer benefit language</span><br>
+          <span class="ok">Full Vehicle Check — Same Day</span> <span class="cm">← convenience + speed</span><br>
+          <span class="ok">150-Point Vehicle Inspection</span> <span class="cm">← specificity = trust</span><br>
+          <span class="ok">Buying a Used Car? Call First</span> <span class="cm">← decision-stage match</span><br>
+          <span class="ok">Independent Pre-Buy Car Check</span> <span class="cm">← independence = trust</span><br>
+          <span class="ok">Save Thousands — Book Inspection</span> <span class="cm">← ROI framing</span><br>
+          <span class="ok">Mobile Mechanic Checks Your Car</span> <span class="cm">← simple, clear</span><br>
+          <span class="ok">Full Report Provided in Writing</span> <span class="cm">← tangible deliverable</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="copybox">
+        <div class="cb-hdr good2">✓ Recommended Descriptions — Pre-Purchase Specific</div>
+        <div class="cb-body">
+          <span class="ok">D1: Before you hand over your money, let our qualified mechanic inspect any vehicle anywhere in QLD or NSW. We check 150+ points and provide a full written report for $299.</span><br><br>
+          <span class="ok">D2: Buying a used car privately or from a dealer? A $299 pre-purchase inspection can save you thousands in hidden repairs. We come to the seller's location — you never leave home.</span><br><br>
+          <span class="ok">D3: Our independent mobile mechanics inspect any make, any model, anywhere in QLD and NSW. Full written inspection report provided on-site. Book today — same-day appointments available.</span><br><br>
+          <span class="ok">D4: Don't risk a lemon. Our certified mobile inspectors assess engine, transmission, brakes, suspension, bodywork and electrics. $299 flat fee — no hidden charges. 4.9★ rated on Google.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;margin:2rem 0 1rem;">Car Servicing Asset Group — New Build (Currently Missing)</h3>
+  <div class="g2">
+    <div>
+      <div class="copybox">
+        <div class="cb-hdr good2">✓ Recommended Headlines — Car Servicing (new asset group)</div>
+        <div class="cb-body">
+          <span class="ok">Mobile Log Book Service — $220</span><br>
+          <span class="ok">We Service Your Car at Home</span><br>
+          <span class="ok">Logbook Service — No Dealership</span><br>
+          <span class="ok">Mobile Car Service [City] — $220</span><br>
+          <span class="ok">Genuine Parts. Your Driveway.</span><br>
+          <span class="ok">Full Service — Doesn't Void Warranty</span><br>
+          <span class="ok">Book Car Service in 60 Seconds</span><br>
+          <span class="ok">Same-Day Service Available</span><br>
+          <span class="ok">All Makes &amp; Models Serviced</span><br>
+          <span class="ok">Skip the Dealership — Save Time</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="copybox">
+        <div class="cb-hdr good2">✓ Recommended Descriptions — Car Servicing</div>
+        <div class="cb-body">
+          <span class="ok">D1: Full mobile log book service from $220 — carried out at your home, office or carpark. Genuine parts used throughout. Doesn't void your manufacturer warranty. QLD &amp; NSW.</span><br><br>
+          <span class="ok">D2: Skip the dealership wait and the hassle of dropping your car off. Our qualified mobile mechanics come to you with everything needed for a complete service from just $220.</span><br><br>
+          <span class="ok">D3: From oil changes to full log book services, we bring the workshop to you. Competitive flat pricing from $220. Book online — same-day available. Serving Brisbane, Gold Coast, Sydney.</span><br><br>
+          <span class="ok">D4: Auto King mobile car servicing uses genuine parts and covers all makes and models. Your log book is stamped. Your warranty is protected. We come to you — 7 days a week from $220.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SECTION 5: NEGATIVE KEYWORDS -->
+<section id="negkw" class="bg2">
+<div class="si">
+  <span class="stag">05 / Negative Keyword Strategy</span>
+  <h2 class="st">Complete negative keyword lists — ready to implement</h2>
+  <p class="sd">As of 2025, Google supports campaign-level negative keywords in Performance Max campaigns. Every list below should be added as a campaign-level negative keyword list to all active PMax campaigns immediately.</p>
+
+  <div class="al info" style="margin-bottom:2rem;">
+    <div class="ali">ℹ</div>
+    <div><div class="alt">How to add negative keywords to PMax in 2025</div>
+    <div class="alb">In Google Ads: Tools &amp; Settings → Shared library → Negative keyword lists. Create a list, add all terms, then apply to all active PMax campaigns. This is a 2025 update — negative keywords are now fully supported at campaign level in Performance Max. Add these lists before any other change in the account.</div></div>
+  </div>
+
+  <div class="g2">
+    <div>
+      <div class="card">
+        <div class="ct" style="color:var(--red);">Roadside Assistance Brands — Add to All Campaigns</div>
+        <div class="cb" style="margin-bottom:.7rem;">These are the biggest source of false conversions. People searching NRMA/RACQ are dialling numbers they find in search results — not booking vehicle inspections. The "conversions" recorded are wrong-number calls inflating the account's data.</div>
+        <div class="kw-grid">
+          <span class="kw kw-red">nrma</span><span class="kw kw-red">racq</span><span class="kw kw-red">youi</span><span class="kw kw-red">budget direct</span><span class="kw kw-red">aami</span><span class="kw kw-red">allianz</span><span class="kw kw-red">gio</span><span class="kw kw-red">suncorp</span><span class="kw kw-red">racv</span><span class="kw kw-red">coles insurance</span><span class="kw kw-red">woolworths insurance</span><span class="kw kw-red">everyday insurance</span><span class="kw kw-red">byd roadside</span><span class="kw kw-red">hyundai roadside</span><span class="kw kw-red">kia roadside</span><span class="kw kw-red">toyota roadside</span><span class="kw kw-red">mercedes roadside</span><span class="kw kw-red">volvo roadside</span><span class="kw kw-red">nissan roadside</span><span class="kw kw-red">virgin roadside</span><span class="kw kw-red">mg roadside</span><span class="kw kw-red">audi roadside</span><span class="kw kw-red">roadside assistance membership</span><span class="kw kw-red">roadside assistance number</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card">
+        <div class="ct" style="color:var(--red);">Services Auto King Does Not Offer</div>
+        <div class="cb" style="margin-bottom:.7rem;">These terms generate clicks from customers seeking services that are not part of Auto King's offering. Every click is wasted spend with zero conversion potential.</div>
+        <div class="kw-grid">
+          <span class="kw kw-red">auto electrician</span><span class="kw kw-red">electrical</span><span class="kw kw-red">tow truck</span><span class="kw kw-red">towing</span><span class="kw kw-red">windscreen</span><span class="kw kw-red">o brien</span><span class="kw kw-red">panel beater</span><span class="kw kw-red">smash repair</span><span class="kw kw-red">spray paint</span><span class="kw kw-red">paint protection</span><span class="kw kw-red">detailing</span><span class="kw kw-red">car wash</span><span class="kw kw-red">tyres</span><span class="kw kw-red">tyre shop</span><span class="kw kw-red">wheel alignment</span><span class="kw kw-red">wheel balance</span><span class="kw kw-red">diesel specialist</span><span class="kw kw-red">transmission specialist</span><span class="kw kw-red">gearbox</span><span class="kw kw-red">fuel drain</span><span class="kw kw-red">wrong fuel</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="g2" style="margin-top:1.4rem;">
+    <div>
+      <div class="card">
+        <div class="ct" style="color:var(--orange);">Intent Mismatches — Price &amp; Intent Modifiers</div>
+        <div class="cb" style="margin-bottom:.7rem;">These modifiers signal intent that Auto King cannot convert. "Cheap" attracts bargain hunters. "Online" signals people who don't want a mobile mechanic. "DIY" is self-service. "Free" is cost-seeking.</div>
+        <div class="kw-grid">
+          <span class="kw kw-org">cheap</span><span class="kw kw-org">cheapest</span><span class="kw kw-org">free</span><span class="kw kw-org">diy</span><span class="kw kw-org">online</span><span class="kw kw-org">course</span><span class="kw kw-org">training</span><span class="kw kw-org">how to</span><span class="kw kw-org">yourself</span><span class="kw kw-org">franchise</span><span class="kw kw-org">franchising</span><span class="kw kw-org">job</span><span class="kw kw-org">career</span><span class="kw kw-org">employment</span><span class="kw kw-org">hire</span><span class="kw kw-org">apprentice</span><span class="kw kw-org">rental</span><span class="kw kw-org">lease</span><span class="kw kw-org">rideshare inspection</span><span class="kw kw-org">uber inspection</span><span class="kw kw-org">rego renewal</span><span class="kw kw-org">registration renewal</span><span class="kw kw-org">check rego</span><span class="kw kw-org">rego check</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card">
+        <div class="ct" style="color:var(--blue);">Competitor Brands — Exclude Direct Competitors</div>
+        <div class="cb" style="margin-bottom:.7rem;">People searching for competitors by name are brand-committed. Appearing for these queries burns budget against customers unlikely to switch. Competitor terms to add as account-level negatives.</div>
+        <div class="kw-grid">
+          <span class="kw kw-blu">lube mobile</span><span class="kw kw-blu">lubemobile</span><span class="kw kw-blu">jims mobile mechanic</span><span class="kw kw-blu">ultra tune</span><span class="kw kw-blu">kmart tyre</span><span class="kw kw-blu">repco</span><span class="kw kw-blu">autobarn</span><span class="kw kw-blu">supercheap</span><span class="kw kw-blu">mr mechanic</span><span class="kw kw-blu">road angels</span><span class="kw kw-blu">roadside mechanic</span><span class="kw kw-blu">autofix</span><span class="kw kw-blu">bursons</span><span class="kw kw-blu">sparesbox</span>
+        </div>
+        <div style="margin-top:1rem;" class="al info">
+          <div><div class="alt">Exception: Monitor "lube mobile" carefully</div>
+          <div class="alb">Lube Mobile is the closest competitor. Some customers searching "lube mobile" may be comparing services. Review the conversion data before adding as a negative — if converting at similar CPA to other terms, consider keeping it.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SECTION 6: LANDING PAGE CRO -->
+<section id="landing">
+<div class="si">
+  <span class="stag">06 / Landing Page CRO</span>
+  <h2 class="st">The page that killed the account's performance</h2>
+  <p class="sd">Instapage crashed. GA4 recorded near-zero form conversions for six months. Every CRO improvement upstream is wasted without a fast, relevant, conversion-focused landing page. Here is the blueprint based on proven performance for service-area businesses.</p>
+
+  <div class="g2" style="margin-bottom:2rem;">
+    <div>
+      <h3 style="font-family:'Syne',sans-serif;font-weight:700;font-size:.95rem;margin-bottom:1rem;">Proven CRO Data Points for Service Pages</h3>
+      <div class="al good">
+        <div><div class="alt">Pages loading in under 1 second convert at 3x the rate of pages loading in 5 seconds</div>
+        <div class="alb">Source: Google PageSpeed data + Portent conversion research. Every additional second costs ~4.42% of conversions. Auto King's service is sold on speed and convenience — a slow page directly contradicts the brand promise. Target: under 2 seconds on mobile.</div></div>
+      </div>
+      <div class="al good" style="margin-top:.8rem;">
+        <div><div class="alt">Testimonials lift landing page conversions by an average of 34%</div>
+        <div class="alb">Source: Foundry CRO 2026 data. Auto King has 4.9★ Google rating and 15,000+ certificates issued. This social proof is currently not prominently featured on any service-specific landing page. Adding 2–3 genuine customer reviews above the fold has the highest single-element conversion lift available.</div></div>
+      </div>
+      <div class="al good" style="margin-top:.8rem;">
+        <div><div class="alt">Message match is the highest-impact practice — and the most commonly skipped</div>
+        <div class="alb">Source: ConversionStudio 2026. The ad headline must match the landing page headline exactly. "Mobile Roadworthy Certificate — Brisbane North" in the ad must appear as "Mobile Roadworthy Certificate — Brisbane North" on the page. Currently, all ads lead to the same generic homepage or broken Instapage URLs.</div></div>
+      </div>
+      <div class="al info" style="margin-top:.8rem;">
+        <div><div class="alt">90.6% of Auto King traffic is mobile — design mobile-first, not mobile-compatible</div>
+        <div class="alb">The phone number button must be in the first 100px of scroll. The form must be completable with one thumb. Form fields must use the correct input types (tel for phone, number for postcode) to trigger the right mobile keyboard. Auto-fill must be enabled.</div></div>
+      </div>
+    </div>
+    <div>
+      <h3 style="font-family:'Syne',sans-serif;font-weight:700;font-size:.95rem;margin-bottom:1rem;">Landing Page Blueprint — Mobile Roadworthy</h3>
+      <div class="lp">
+        <div class="lp-head">
+          <div style="font-size:.62rem;color:var(--text3);margin-bottom:.3rem;font-family:'JetBrains Mono',monospace;">NO NAV MENU · SINGLE GOAL: BOOK</div>
+          <div class="lp-ht">Mobile Roadworthy<br><span style="color:var(--gold)">Brisbane North — $130 Flat</span></div>
+          <div class="lp-hs">We come to you · Same-day · QLD licensed</div>
+        </div>
+        <div class="lp-trust">
+          <span class="lp-b">★ 4.9 Google</span>
+          <span class="lp-b">15,000+ Certs</span>
+          <span class="lp-b">⚡ Same-Day</span>
+          <span class="lp-b">10min Callback</span>
+        </div>
+        <div style="padding:.6rem 1rem;background:rgba(255,59,92,.08);border-bottom:1px solid var(--br);font-size:.7rem;text-align:center;color:var(--red);font-weight:600;">⏰ Only 3 slots available today in Brisbane North</div>
+        <div class="lp-form">
+          <div style="font-size:.75rem;font-weight:600;margin-bottom:.5rem;color:var(--text);">Book in 60 seconds — we call back in 10 mins</div>
+          <div class="lp-price">✓ Flat $130 — No Hidden Fees · No Call-Out Charge</div>
+          <div class="lp-f">Full Name</div>
+          <div class="lp-f">📱 Mobile Number (input type=tel)</div>
+          <div class="lp-f">Postcode (input type=number)</div>
+          <div class="lp-f">Service Needed ▾</div>
+          <div class="lp-f">Best Contact Time ▾</div>
+          <div style="font-size:.65rem;color:var(--text3);margin-bottom:.45rem;">🔒 Secure · We never share your details</div>
+          <div class="lp-cta">Book My Roadworthy — $130 →</div>
+        </div>
+        <div class="lp-phone">
+          <div style="font-size:.68rem;color:var(--text2);margin-bottom:.3rem;">Prefer to call? We answer immediately.</div>
+          <div class="lp-pb">📞 Call Now — 1300 XXX XXX</div>
+        </div>
+        <div class="lp-rev">
+          <div class="lp-star">★★★★★</div>
+          <div class="lp-rt">"Inspector at my door in 45 mins. Certificate the same day. Couldn't be easier." — Michael T, Chermside</div>
+          <div class="lp-star" style="margin-top:.4rem;">★★★★★</div>
+          <div class="lp-rt">"$130 flat, no surprises, done in my driveway. Will use every time." — Sarah K, Aspley</div>
+        </div>
+        <div style="padding:.5rem 1rem;background:rgba(240,165,0,.06);border-top:1px solid var(--br);">
+          <div style="font-size:.63rem;color:var(--text3);text-align:center;">Serving: Aspley · Chermside · Stafford · North Lakes · Albany Creek · +40 suburbs</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;margin-bottom:1rem;">Landing Page Rules — Non-Negotiable for CRO</h3>
+  <div class="g3">
+    <div class="card">
+      <div class="ct" style="color:var(--gold);">Message Match — Every Page</div>
+      <div class="cb">The H1 of every landing page must exactly match the headline of the ad that sent the user there. "Mobile Roadworthy Certificate — Brisbane North" in the ad = "Mobile Roadworthy Certificate — Brisbane North" as the H1. Google scores landing page relevance by comparing ad copy to page content. Mismatch = lower Quality Score = higher CPC.</div>
+    </div>
+    <div class="card">
+      <div class="ct" style="color:var(--gold);">Price Above the Fold — Always</div>
+      <div class="cb">Auto King's fixed pricing ($130 RWC, $149 Pink Slip, $220 Servicing, $299 PPI) is a competitive advantage. Hiding the price forces customers to search for it — some will bounce. Display the price prominently near the CTA button as a trust signal, not as a deterrent. "Flat $130 — No Hidden Fees" converts better than price ambiguity.</div>
+    </div>
+    <div class="card">
+      <div class="ct" style="color:var(--gold);">5 Form Fields — Maximum</div>
+      <div class="cb">Name, Phone, Postcode, Service Needed, Best Contact Time. Plus one hidden GCLID field. Every additional visible field reduces form conversion rate by approximately 5–10%. Do not ask for: Vehicle make, Vehicle rego, Address, Email (call-back model doesn't need it), Notes. The mechanic can ask for details when they call back.</div>
+    </div>
+    <div class="card">
+      <div class="ct" style="color:var(--gold);">Unique Thank-You URL Per Service</div>
+      <div class="cb">/thank-you-roadworthy · /thank-you-pink-slip · /thank-you-servicing · /thank-you-prepurchase · /thank-you-diagnosis · /thank-you-repairs. GTM cannot assign service-specific conversion values without distinct confirmation URLs. Without this, a $299 pre-purchase lead is tracked identically to a $130 roadworthy lead — killing value-based bidding.</div>
+    </div>
+    <div class="card">
+      <div class="ct" style="color:var(--gold);">Scarcity &amp; Urgency — Without Lying</div>
+      <div class="cb">Real urgency exists in Auto King's model — there genuinely are limited slots per region per day. "Only 3 slots available today in Brisbane North" is verifiable and drives action. Countdown timers for same-day availability work for service businesses. Do not fabricate scarcity — use real operational constraints.</div>
+    </div>
+    <div class="card">
+      <div class="ct" style="color:var(--gold);">Platform Choice — Abandon Instapage</div>
+      <div class="cb">Instapage crashed once and was never rebuilt. Use Unbounce ($99–249/month) or Swipe Pages ($39–89/month) — both have AMP support (faster mobile load), native GTM integration, and duplicate-page functionality for building 18+ service×geo combinations efficiently. Every page inherits the same GTM container.</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SECTION 7: CONVERSION TRACKING -->
+<section id="tracking" class="bg2">
+<div class="si">
+  <span class="stag">07 / Conversion Tracking — The Algorithm's Fuel</span>
+  <h2 class="st">Smart bidding is only as good as the signal it receives</h2>
+  <p class="sd">Everything in a Performance Max campaign — which queries to enter, how much to bid, which assets to serve — is determined by conversion signal quality. Currently Auto King's signal is incomplete, polluted by phantom conversions, and missing revenue data entirely.</p>
+
+  <div class="g2" style="margin-bottom:2rem;">
+    <div>
+      <h3 style="font-family:'Syne',sans-serif;font-weight:700;font-size:.95rem;margin-bottom:1rem;">Current Conversion Setup — What's Wrong</h3>
+      <div class="tw">
+      <table>
+        <thead><tr><th>Conversion Action</th><th>Role</th><th>Volume</th><th>Value</th><th>Status</th><th>Problem</th></tr></thead>
+        <tbody>
+          <tr><td>Form Submission — WP</td><td><span class="tag ty">Primary</span></td><td class="mono">3,969</td><td class="mono">$16</td><td><span class="tag tg">Active</span></td><td>$16 value is arbitrary — not linked to service type</td></tr>
+          <tr><td>Form Submission — Instapage</td><td><span class="tag tgr">Secondary</span></td><td class="mono">11,986</td><td class="mono">$0</td><td><span class="tag tr">Needs attention</span></td><td>$0 value, likely phantom fires, "Needs attention" flag</td></tr>
+          <tr><td>Calls from Call Extension</td><td><span class="tag ty">Primary</span></td><td class="mono">14,597</td><td class="mono">$14,597</td><td><span class="tag tg">Active</span></td><td>$1/call average value — likely includes NRMA false calls</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="al crit">
+        <div><div class="alt">The $1/call value for Calls from Call Extension is almost certainly inflated by wrong-number calls</div>
+        <div class="alb">The account records "nrma roadside assistance number" as generating 15 conversions at $19.87 CPA. These are phone calls from people who found Auto King's number while searching for NRMA. They are not booked jobs. Yet they are recorded as primary conversions and used to train smart bidding. The algorithm believes appearing for NRMA queries drives revenue. This is why the account bids into roadside assistance queries.</div></div>
+      </div>
+    </div>
+    <div>
+      <h3 style="font-family:'Syne',sans-serif;font-weight:700;font-size:.95rem;margin-bottom:1rem;">Correct Conversion Setup — What It Should Be</h3>
+      <div class="tw">
+      <table>
+        <thead><tr><th>Conversion Action</th><th>Role</th><th>Trigger</th><th>Value</th></tr></thead>
+        <tbody>
+          <tr><td>Roadworthy Booked</td><td><span class="tag ty">Primary</span></td><td>GTM on /thank-you-roadworthy</td><td class="mono" style="color:var(--green)">$130</td></tr>
+          <tr><td>Pink Slip Booked</td><td><span class="tag ty">Primary</span></td><td>GTM on /thank-you-pink-slip</td><td class="mono" style="color:var(--green)">$149</td></tr>
+          <tr><td>Car Service Booked</td><td><span class="tag ty">Primary</span></td><td>GTM on /thank-you-servicing</td><td class="mono" style="color:var(--green)">$220</td></tr>
+          <tr><td>Pre-Purchase Booked</td><td><span class="tag ty">Primary</span></td><td>GTM on /thank-you-prepurchase</td><td class="mono" style="color:var(--green)">$299</td></tr>
+          <tr><td>Diagnosis/Repairs</td><td><span class="tag ty">Primary</span></td><td>GTM on /thank-you-diagnosis</td><td class="mono" style="color:var(--green)">$149</td></tr>
+          <tr><td>Calls from Ads</td><td><span class="tag ty">Primary</span></td><td>Call Extension (60sec+)</td><td class="mono" style="color:var(--green)">$130</td></tr>
+          <tr><td>Offline Booking (Monday)</td><td><span class="tag ty">Primary</span></td><td>Zapier → Ads API</td><td class="mono" style="color:var(--green)">Actual job value</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="al good">
+        <div><div class="alt">Once correct values are in place, switch to Target ROAS bidding</div>
+        <div class="alb">With service-specific conversion values flowing, the algorithm will automatically weight pre-purchase leads ($299) 2.3x higher than roadworthy leads ($130) without any manual intervention. A Target ROAS of 900% (i.e., $9 return per $1 spent) is achievable based on historical CPA data once signal is clean.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;margin-bottom:1rem;">Monday.com → Google Ads Offline Conversion Pipeline</h3>
+  <div class="g3">
+    <div class="card">
+      <div class="ct">Step 1 — Capture GCLID at form submit</div>
+      <div class="cb">Add a hidden field to every landing page form: <span style="font-family:'JetBrains Mono',monospace;color:var(--gold);font-size:.78rem;">&lt;input type="hidden" name="gclid" id="gclid_field"&gt;</span> with JavaScript that captures the gclid URL parameter on page load. This field submits with the form, invisibly connecting every web lead to its Google Ads click.</div>
+    </div>
+    <div class="card">
+      <div class="ct">Step 2 — Store GCLID in Monday.com</div>
+      <div class="cb">Add a "gclid" text column to the Monday.com leads board. Configure the form integration to map the hidden gclid field to this column. Confirm it is populating by testing a form submission with a manual GCLID parameter in the URL.</div>
+    </div>
+    <div class="card">
+      <div class="ct">Step 3 — Push booked jobs back to Ads</div>
+      <div class="cb">Zapier workflow: Monday item status changes to "Booked" → Zapier reads GCLID + service type + job value → Sends to Google Ads Offline Conversion Upload API. Revenue now flows back to the originating campaign, ad group, and keyword. Smart bidding optimises to actual booked revenue.</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SECTION 8: NSW GAP -->
+<section id="nsw">
+<div class="si">
+  <span class="stag">08 / NSW Opportunity — Campaigns Already Exist</span>
+  <h2 class="st">6 paused NSW PMax campaigns are sitting in the account right now</h2>
+  <p class="sd">The data revealed a critical finding that changes the NSW expansion narrative entirely — these campaigns don't need to be built from scratch. They already exist, are already named, and just need to be properly configured and activated.</p>
+
+  <div class="g2" style="margin-bottom:2rem;">
+    <div>
+      <div class="tw">
+      <table>
+        <thead><tr><th>Paused Campaign</th><th>Status</th><th>Current Spend</th><th>What's Needed</th></tr></thead>
+        <tbody>
+          <tr><td>PMax — Central Coast — Claude</td><td><span class="tag tgr">PAUSED</span></td><td class="mono">$0</td><td>Landing pages, search themes, audience signals, activate</td></tr>
+          <tr><td>PMax — Newcastle — Claude</td><td><span class="tag tgr">PAUSED</span></td><td class="mono">$0</td><td>Landing pages, search themes, audience signals, activate</td></tr>
+          <tr><td>PMax — Port Macquarie — Claude</td><td><span class="tag tgr">PAUSED</span></td><td class="mono">$0</td><td>Confirm if Auto King serves Port Macquarie before activating</td></tr>
+          <tr><td>PMax — Sydney West — Claude</td><td><span class="tag tgr">PAUSED</span></td><td class="mono">$0</td><td>Landing pages, Pink Slip search themes, activate</td></tr>
+          <tr><td>PMax — Wollongong</td><td><span class="tag tgr">PAUSED</span></td><td class="mono">$0</td><td>Confirm service coverage, add Pink Slip themes, activate</td></tr>
+          <tr><td>PMax — Wollongong — Claude</td><td><span class="tag tgr">PAUSED</span></td><td class="mono">$0</td><td>Duplicate of above — consolidate into one campaign</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="al info">
+        <div><div class="alt">Pink Slip is the primary revenue driver for NSW — add it to every NSW campaign asset group</div>
+        <div class="alb">NSW has no roadworthy certificate — it has the Pink Slip ($149) and Blue Slip. Every NSW PMax campaign needs Pink Slip as its primary asset group. The current Sutherland Shire PMax campaign (paused) had no Pink Slip asset group — this is likely why it underperformed at $28.49 CPA vs QLD campaigns at $9–12 CPA. The service mismatch between QLD roadworthy themes and NSW customers was the problem.</div></div>
+      </div>
+    </div>
+    <div>
+      <h3 style="font-family:'Syne',sans-serif;font-weight:700;font-size:.95rem;margin-bottom:.8rem;">NSW Search Console Demand — Confirmed Before Spend</h3>
+      <div class="tw">
+      <table>
+        <thead><tr><th>Query</th><th>Annual Impressions</th><th>Organic CTR</th><th>Paid Campaigns</th></tr></thead>
+        <tbody>
+          <tr><td>pink slip near me</td><td class="mono">9,562</td><td class="mono" style="color:var(--orange)">0.44%</td><td><span class="tag tr">None</span></td></tr>
+          <tr><td>mobile pink slip</td><td class="mono">6,200+</td><td class="mono" style="color:var(--orange)">0.6%</td><td><span class="tag tr">None</span></td></tr>
+          <tr><td>pink slip haberfield</td><td class="mono">771</td><td class="mono" style="color:var(--orange)">Low</td><td><span class="tag tr">None</span></td></tr>
+          <tr><td>pink slip lane cove</td><td class="mono">508</td><td class="mono" style="color:var(--green)">2.8%</td><td><span class="tag tr">None</span></td></tr>
+          <tr><td>pink slip erskineville</td><td class="mono">1,282</td><td class="mono">Low</td><td><span class="tag tr">None</span></td></tr>
+          <tr><td>mobile mechanic newcastle</td><td class="mono">4,706</td><td class="mono" style="color:var(--orange)">0.8%</td><td><span class="tag tr">None</span></td></tr>
+          <tr><td>mobile mechanic central coast</td><td class="mono">4,775</td><td class="mono" style="color:var(--orange)">1.1%</td><td><span class="tag tr">None</span></td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="al good" style="margin-top:.8rem;">
+        <div><div class="alt">NSW campaigns need Pink Slip asset groups — not QLD roadworthy themes</div>
+        <div class="alb">The existing paused NSW campaigns likely have QLD-oriented asset groups (roadworthy, safety certificate) which is why they were paused — they were not converting because NSW customers search for "pink slip" not "roadworthy certificate". The fix is adding NSW-specific asset groups to each paused campaign before reactivation.</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SECTION 9: PRIORITY MATRIX -->
+<section id="matrix" class="bg2">
+<div class="si">
+  <span class="stag">09 / Priority Action Matrix</span>
+  <h2 class="st">What to do, in order, ranked by revenue impact</h2>
+  <p class="sd">Everything in this report has a revenue impact. These are the actions ranked by the size of the opportunity and the speed at which results will materialise. Do them in this order.</p>
+
+  <div class="pmatrix" style="margin-bottom:2rem;">
+    <div class="pm-cell">
+      <div class="pm-hdr" style="color:var(--red);border-color:rgba(255,59,92,.2);">🔴 Do First — Foundation (Highest Impact)</div>
+      <div class="pm-item">
+        <div class="pm-num" style="background:rgba(255,59,92,.15);color:var(--red);">1</div>
+        <div class="pm-text"><strong style="color:var(--text);">Add negative keyword lists to all PMax campaigns.</strong> Roadside assistance brands, auto electrician, towing, windscreen. Takes 2 hours. Stops $6,115/quarter in wasted spend immediately. This is the single fastest ROI improvement available in the account.</div>
+      </div>
+      <div class="pm-item">
+        <div class="pm-num" style="background:rgba(255,59,92,.15);color:var(--red);">2</div>
+        <div class="pm-text"><strong style="color:var(--text);">Reactivate brand campaign.</strong> [auto king], [autoking], [auto king mobile mechanic]. Budget $350/month. Prevents competitors from ranking above Auto King on branded searches. CPA $3–5 — cheapest leads in the account.</div>
+      </div>
+      <div class="pm-item">
+        <div class="pm-num" style="background:rgba(255,59,92,.15);color:var(--red);">3</div>
+        <div class="pm-text"><strong style="color:var(--text);">Rebuild landing pages.</strong> Choose Unbounce or Swipe Pages. Build 3 pages immediately: Roadworthy Brisbane, Roadworthy Gold Coast, Mobile Mechanic Sydney. Add GCLID hidden field. Unique thank-you URLs per service. Without this, every other optimisation is irrelevant.</div>
+      </div>
+      <div class="pm-item">
+        <div class="pm-num" style="background:rgba(255,59,92,.15);color:var(--red);">4</div>
+        <div class="pm-text"><strong style="color:var(--text);">Rebuild conversion actions with service-specific values.</strong> Pause the Instapage $0-value action. Create 6 service-specific conversion actions (Roadworthy $130 through Pre-Purchase $299). Keep call conversion active but set minimum call duration of 60 seconds to filter wrong-number calls.</div>
+      </div>
+      <div class="pm-item">
+        <div class="pm-num" style="background:rgba(255,59,92,.15);color:var(--red);">5</div>
+        <div class="pm-text"><strong style="color:var(--text);">Rewrite all asset group descriptions.</strong> Service-specific descriptions for each of the 3 asset groups across all 12 campaigns. Remove "Get A Free Quote Today" and "We Will Beat Any Price." This alone should move Ad Strength from Average to Good. 6% conversion uplift per Google's data.</div>
+      </div>
+    </div>
+    <div class="pm-cell">
+      <div class="pm-hdr" style="color:var(--orange);border-color:rgba(255,138,0,.2);">🟠 Do Second — Structure (High Impact)</div>
+      <div class="pm-item">
+        <div class="pm-num" style="background:rgba(255,138,0,.15);color:var(--orange);">6</div>
+        <div class="pm-text"><strong style="color:var(--text);">Add Car Servicing and Diagnosis &amp; Repairs asset groups</strong> to all active PMax campaigns. These are services Auto King offers with no dedicated asset groups. Build new headlines and descriptions from the copy framework in this report.</div>
+      </div>
+      <div class="pm-item">
+        <div class="pm-num" style="background:rgba(255,138,0,.15);color:var(--orange);">7</div>
+        <div class="pm-text"><strong style="color:var(--text);">Fill all 50 search theme slots</strong> across all active PMax campaigns. Current: 3–4 themes per campaign. Target: 15 per service category across all service types. This directly expands the search queries each campaign enters auctions for.</div>
+      </div>
+      <div class="pm-item">
+        <div class="pm-num" style="background:rgba(255,138,0,.15);color:var(--orange);">8</div>
+        <div class="pm-text"><strong style="color:var(--text);">Activate paused NSW campaigns</strong> — Central Coast, Newcastle, Sydney West. Add Pink Slip asset groups. Build NSW-specific landing pages before activating. Confirm service coverage per region with Jay before switching on.</div>
+      </div>
+      <div class="pm-item">
+        <div class="pm-num" style="background:rgba(255,138,0,.15);color:var(--orange);">9</div>
+        <div class="pm-text"><strong style="color:var(--text);">Reset Target CPA</strong> once 14 days of clean conversion data collected. New targets: Brisbane $14–16, Gold Coast $12–14, Regional QLD $10–12, Sydney $20–22. Do not change this before tracking is confirmed clean.</div>
+      </div>
+      <div class="pm-item">
+        <div class="pm-num" style="background:rgba(255,138,0,.15);color:var(--orange);">10</div>
+        <div class="pm-text"><strong style="color:var(--text);">Reset audience signals.</strong> The All Visitors and All Converters audiences are polluted with 6 months of broken-tracking users. Reset and rebuild from clean GA4 session data. Add "People planning to buy a used car" in-market segment for pre-purchase campaigns.</div>
+      </div>
+    </div>
+    <div class="pm-cell">
+      <div class="pm-hdr" style="color:var(--gold);border-color:rgba(240,165,0,.2);">🟡 Do Third — Scale (Medium Impact)</div>
+      <div class="pm-item">
+        <div class="pm-num" style="background:rgba(240,165,0,.15);color:var(--gold);">11</div>
+        <div class="pm-text"><strong style="color:var(--text);">Scale Gold Coast campaigns.</strong> Best CPA in account ($9.76–$9.86) with only 14–16% impression share. Increase combined budget from ~$1,100 to ~$2,000/month. Zero rank-lost IS means the market is available — the Target CPA is the only restraint.</div>
+      </div>
+      <div class="pm-item">
+        <div class="pm-num" style="background:rgba(240,165,0,.15);color:var(--gold);">12</div>
+        <div class="pm-text"><strong style="color:var(--text);">Build Monday.com → Zapier → Google Ads offline conversion pipeline.</strong> GCLID captured at form submit → stored in Monday.com → pushed back to Ads when job is booked. Smart bidding shifts from lead count to booked revenue.</div>
+      </div>
+      <div class="pm-item">
+        <div class="pm-num" style="background:rgba(240,165,0,.15);color:var(--gold);">13</div>
+        <div class="pm-text"><strong style="color:var(--text);">Consolidate Sunshine Coast North + South</strong> into one campaign with 2 asset groups. SC North standalone runs at $26.49 CPA. Shared budget in one campaign with proper search themes and good Ad Strength will perform significantly better.</div>
+      </div>
+      <div class="pm-item">
+        <div class="pm-num" style="background:rgba(240,165,0,.15);color:var(--gold);">14</div>
+        <div class="pm-text"><strong style="color:var(--text);">Upload portrait images</strong> to all asset groups. Currently missing from every asset group. Portrait format (4:5 ratio, 960×1200px min) unlocks additional Google inventory, particularly YouTube Shorts and mobile Display. Needed for Excellent Ad Strength.</div>
+      </div>
+    </div>
+    <div class="pm-cell">
+      <div class="pm-hdr" style="color:var(--green);border-color:rgba(0,214,143,.2);">🟢 Do Fourth — Optimise (Compounding Impact)</div>
+      <div class="pm-item">
+        <div class="pm-num" style="background:rgba(0,214,143,.15);color:var(--green);">15</div>
+        <div class="pm-text"><strong style="color:var(--text);">Switch Brisbane and Gold Coast to Target ROAS bidding</strong> once 90 days of clean offline conversion data has accumulated. Target 900–1,200% ROAS. Algorithm now optimises to booked job revenue, not lead volume — automatically prioritising high-value service leads.</div>
+      </div>
+      <div class="pm-item">
+        <div class="pm-num" style="background:rgba(0,214,143,.15);color:var(--green);">16</div>
+        <div class="pm-text"><strong style="color:var(--text);">Launch SKAG Search campaigns</strong> for highest-intent transactional queries: "roadworthy certificate near me" (Brisbane) and "pink slip near me" (Sydney). Exact + Phrase match. Supplements PMax for pure search intent queries where PMax may dilute into display inventory.</div>
+      </div>
+      <div class="pm-item">
+        <div class="pm-num" style="background:rgba(0,214,143,.15);color:var(--green);">17</div>
+        <div class="pm-text"><strong style="color:var(--text);">Build RLSA remarketing</strong> — GA4 audience "Visited roadworthy page, no form submit" → +50% bid adjustment when they search roadworthy terms again. And "Form abandoned" → Display retargeting. Remarketing CPAs typically run 30–40% below acquisition CPAs.</div>
+      </div>
+      <div class="pm-item">
+        <div class="pm-num" style="background:rgba(0,214,143,.15);color:var(--green);">18</div>
+        <div class="pm-text"><strong style="color:var(--text);">Seasonal budget planning</strong> — October-November: +20–25% roadworthy budget for pre-summer peak. EOFY May-June: fleet servicing campaigns. Regional QLD expansion: Mackay (2,915 organic impressions), Rockhampton (1,716), Gladstone (2,025) all have confirmed Search Console demand.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="al good">
+    <div class="ali">📊</div>
+    <div><div class="alt">Expected account outcomes once Priority 1–10 actions are complete</div>
+    <div class="alb" style="display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:.8rem;">
+      <div style="text-align:center;padding:.8rem;background:rgba(0,214,143,.07);border-radius:8px;border:1px solid rgba(0,214,143,.2);">
+        <div style="font-family:'Syne',sans-serif;font-size:1.5rem;font-weight:800;color:var(--green);">$10–14</div>
+        <div style="font-size:.72rem;color:var(--text2);">Target Blended CPA<br>(vs $25 today)</div>
+      </div>
+      <div style="text-align:center;padding:.8rem;background:rgba(240,165,0,.07);border-radius:8px;border:1px solid rgba(240,165,0,.2);">
+        <div style="font-family:'Syne',sans-serif;font-size:1.5rem;font-weight:800;color:var(--gold);">30–40%</div>
+        <div style="font-size:.72rem;color:var(--text2);">Target Impression Share<br>(vs 14–27% today)</div>
+      </div>
+      <div style="text-align:center;padding:.8rem;background:rgba(0,170,255,.07);border-radius:8px;border:1px solid rgba(0,170,255,.2);">
+        <div style="font-family:'Syne',sans-serif;font-size:1.5rem;font-weight:800;color:var(--blue);">Good–Exc</div>
+        <div style="font-size:.72rem;color:var(--text2);">All Asset Group Ratings<br>(vs all Average today)</div>
+      </div>
+      <div style="text-align:center;padding:.8rem;background:rgba(168,85,247,.07);border-radius:8px;border:1px solid rgba(168,85,247,.2);">
+        <div style="font-family:'Syne',sans-serif;font-size:1.5rem;font-weight:800;color:var(--purple);">$0</div>
+        <div style="font-size:.72rem;color:var(--text2);">Phantom Conversion<br>Signal in Bidding</div>
+      </div>
+    </div></div>
+  </div>
+</div>
+</section>
+
+<footer>
+  <p style="margin-bottom:.4rem;"><strong>Auto King Australia — Full Funnel CRO Strategy Report 2026</strong></p>
+  <p>Account 108-264-3572 · 29,283 search terms analysed · 33 asset groups audited · Prepared by <strong>Stellar Rank</strong> · May 2026 · Confidential</p>
+</footer>
+
+<script>
+// Waste bars
+const wd=[
+  {lbl:'Roadside Assistance Brands',val:2800,c:'rgba(255,59,92,.7)'},
+  {lbl:'Auto Electrician Queries',val:1200,c:'rgba(255,59,92,.6)'},
+  {lbl:'Towing / Windscreen / Panel',val:800,c:'rgba(255,138,0,.7)'},
+  {lbl:'Cheap / Price Modifier',val:450,c:'rgba(255,138,0,.6)'},
+  {lbl:'Competitor Brands',val:380,c:'rgba(168,85,247,.6)'},
+  {lbl:'Out-of-Area Queries',val:280,c:'rgba(255,138,0,.5)'},
+  {lbl:'Other Zero-Conv Queries',val:205,c:'rgba(100,120,150,.6)'},
+];
+const max=2800;
+let h='';
+wd.forEach(d=>{
+  const p=(d.val/max*100).toFixed(1);
+  h+=`<div class="bcr"><div class="bc-lbl">${d.lbl}</div><div class="bc-track"><div class="bc-fill" style="width:${p}%;background:${d.c};color:rgba(255,255,255,.9);">$${d.val.toLocaleString()}</div></div><div class="bc-val">$${d.val.toLocaleString()}/qtr</div></div>`;
+});
+document.getElementById('waste-bars').innerHTML=h;
+</script>
+</body>
+</html>
